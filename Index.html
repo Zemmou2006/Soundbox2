@@ -3,19 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Min Nettsted</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header, footer { background-color: #eee; padding: 20px; text-align: center; }
-    nav ul { list-style: none; display: flex; justify-content: center; padding: 0; }
-    nav li { margin: 0 10px; }
-    nav a { text-decoration: none; color: #333; }
-    main { display: flex; padding: 20px; }
-    aside { width: 30%; padding: 20px; background: #f5f5f5; }
-    section { flex: 1; padding: 20px; }
-    footer form { display: flex; flex-direction: column; width: 300px; margin: 0 auto; }
-    footer input, footer textarea { margin-bottom: 10px; padding: 8px; }
-  </style>
+  <title>Min nettside</title>
 </head>
 <body>
 
@@ -32,61 +20,58 @@
   </header>
 
   <main>
-    <!-- Sideområde -->
     <aside>
       <section>
-        <h3>Semantisk HTML Artikler</h3>
+        <h2>Semantisk HTML Lenker</h2>
         <ul>
-          <li><a href="https://developer.mozilla.org/no/docs/Web/HTML/Element">MDN HTML Elementer</a></li>
-          <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">W3Schools Semantisk HTML</a></li>
-          <li><a href="https://html.com/semantic-markup/">HTML.com om semantikk</a></li>
-          <li><a href="https://www.freecodecamp.org/news/semantic-html5-elements/">FreeCodeCamp guide</a></li>
+          <li><a href="https://developer.mozilla.org/no/docs/Web/HTML/Element">MDN HTML</a></li>
+          <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">W3Schools</a></li>
+          <li><a href="https://html.com/semantic-markup/">HTML.com</a></li>
+          <li><a href="https://www.freecodecamp.org/news/semantic-html5-elements/">FreeCodeCamp</a></li>
           <li><a href="https://www.smashingmagazine.com/2020/01/semantic-html5-guide/">Smashing Magazine</a></li>
         </ul>
       </section>
       <section>
-        <h3>Google-søk om HTML5</h3>
+        <h2>HTML5 på Google</h2>
         <a href="https://www.google.com/search?q=html5">Søk på HTML5</a>
       </section>
     </aside>
 
-    <!-- Hovedområde -->
     <section>
       <article>
         <h2>Kontakt oss</h2>
-        <p>Ta gjerne kontakt med oss via skjemaet nederst på siden.</p>
+        <p>Ta kontakt med oss via skjemaet nederst.</p>
       </article>
       <article>
         <h2>Studieplan</h2>
-        <p>Her finner du oversikt over studieplanen for semesteret.</p>
+        <p>Her kan du lese mer om studieplanen.</p>
       </article>
       <article>
         <h2>Om prosjektet</h2>
-        <p>Denne siden er laget som del av et arbeidskrav i webutvikling.</p>
+        <p>Dette er en nettside laget i et kurs i webutvikling.</p>
       </article>
     </section>
   </main>
 
-  <!-- Footer med kontaktskjema -->
   <footer id="kontakt">
-    <p>Navn: Ola Nordmann</p>
-    <p>E-post: ola@example.com</p>
-    
-    <h3>Kontaktskjema</h3>
-    <form action="#" method="post">
+    <p>Ola Nordmann</p>
+    <p>ola@example.com</p>
+
+    <h2>Kontaktskjema</h2>
+    <form>
       <label for="navn">Navn:</label>
-      <input type="text" id="navn" name="navn" required>
+      <input type="text" id="navn" name="navn"><br>
 
       <label for="emne">Emne:</label>
-      <input type="text" id="emne" name="emne" required>
+      <input type="text" id="emne" name="emne"><br>
 
       <label for="epost">E-post:</label>
-      <input type="email" id="epost" name="epost" required>
+      <input type="email" id="epost" name="epost"><br>
 
-      <label for="melding">Melding:</label>
-      <textarea id="melding" name="melding" rows="4" required></textarea>
+      <label for="melding">Melding:</label><br>
+      <textarea id="melding" name="melding"></textarea><br>
 
-      <button type="submit">Send</button>
+      <input type="submit" value="Send">
     </form>
   </footer>
 
